@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About IITU</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+   
+  <div id="header-placeholder"></div>
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+      });
+  </script>
+
+   <br>
+   <div class="about-container">
+  <h1>About IITU</h1>
+  <p>
+    The International University of Information Technology (IITU) is one of Kazakhstan’s top tech universities.
+    It trains future professionals in programming, cybersecurity, AI, and more.
+  </p>
+
+  <h2>Why IITU Stands Out</h2>
+  <ul>
+    <li>Accredited by ASIIN (Germany)</li>
+    <li>Top 3 university in Kazakhstan</li>
+    <li>#1 in Information Systems and Electronic Journalism</li>
+    <li>Leading Cybersecurity Program</li>
+  </ul>
+
+  <h2>Who Studies at IITU?</h2>
+  <ul>
+    <li>Over 4,000 students</li>
+    <li>Offers Bachelor's, Master's, and PhD degrees</li>
+    <li>Strong English and real-world skills focus</li>
+  </ul>
+
+  <h2>Military & Cybersecurity</h2>
+  <ul>
+    <li>Military department for cybersecurity</li>
+    <li>Cybersecurity Competence Center</li>
+  </ul>
+
+  <h2>Global Partnerships</h2>
+  <p>IITU works with universities in the USA, Germany, France, South Korea, Malaysia, and China.</p>
+  <p>Students can study abroad through mobility programs.</p>
+
+  <h2>Life After IITU</h2>
+  <ul>
+    <li>90% of graduates find jobs</li>
+    <li>Alumni work in tech companies, startups, and government</li>
+  </ul>
+
+  <h2>Student Life</h2>
+  <p>IITU has more than 20 student organizations:</p>
+  <ul>
+    <li>IT FM (student radio)</li>
+    <li>Debate Club</li>
+    <li>Enactus (entrepreneurship)</li>
+    <li>ShadowS (dance)</li>
+    <li>IT Theatre</li>
+    <li>League of IT (football)</li>
+    <li>FOREVER YOUNG (arts)</li>
+    <li>Cinema Club</li>
+    <li>IITU Family (volunteers)</li>
+    <li>Security Team</li>
+  </ul>
+</div>
+
+</body>
+</html>

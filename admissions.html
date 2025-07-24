@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admissions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+        const path = window.location.pathname.split("/").pop();
+        document.querySelectorAll(".navbar a").forEach(link => {
+          if (link.getAttribute("href") === path) {
+            link.classList.add("active");
+          }
+        });
+      });
+  </script>
+    <br>
+  
+ <div class="containerr">
+  <h1>📥 Admissions at IITU</h1>
+  <p>Join one of Kazakhstan’s most advanced IT universities. Whether you're applying for a Bachelor's, Master's, or PhD program — here’s what you need to know.</p>
+
+  <section>
+    <h2>🧑‍🎓 Who Can Apply?</h2>
+    <ul>
+      <li>High school graduates (for Bachelor's)</li>
+      <li>University degree holders (for Master's)</li>
+      <li>Researchers and academics (for PhD)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📄 Required Documents</h2>
+    <ul>
+      <li>Completed online application form</li>
+      <li>Passport or national ID</li>
+      <li>Educational certificates and transcripts</li>
+      <li>English language proficiency (IELTS/TOEFL – if available)</li>
+      <li>Motivation letter (for Master’s and PhD)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🌐 How to Apply</h2>
+    <ol>
+      <li>Visit the official website: <a href="https://iitu.edu.kz" target="_blank">iitu.edu.kz</a></li>
+      <li>Choose your desired program</li>
+      <li>Fill out the application form online</li>
+      <li>Upload all required documents</li>
+      <li>Wait for confirmation from the admissions office</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>📆 Important Dates</h2>
+    <ul>
+      <li><strong>Application period:</strong> June – August</li>
+      <li><strong>Entrance exams:</strong> July</li>
+      <li><strong>Semester starts:</strong> September</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>💰 Tuition & Scholarships</h2>
+    <p>IITU offers competitive tuition fees and various scholarship opportunities based on merit and financial need.</p>
+  </section>
+
+  <section>
+    <h2>❓ Need Help?</h2>
+    <p>Contact the Admissions Office: <br>
+      📧 <a href="mailto:admissions@iitu.edu.kz">admissions@iitu.edu.kz</a> <br>
+      ☎️ +7 (727) 320 00 00
+    </p>
+  </section>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #6e0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #6e0000, #a60000);
+    color: white;
+    background-image: url('univer.jpg');
+    background-size: cover;
+    background-position: center;
+}
+body::before {
+    content: "";                         
+    position: absolute;                 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-image: url('univer.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    filter: blur(8px);                
+    z-index: -1;                       
+}
+.container {
+    background-color: #990000;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cc4444;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #ffdddd;
+    color: #440000;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ff4d4d;
+    box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.4);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #b00000;
+}
+
+.container p {
+    text-align: center;
+    margin-top: 20px;
+    color: #f0cccc;
+}
+
+.container a {
+    color: #ff9999;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}

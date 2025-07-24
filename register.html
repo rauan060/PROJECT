@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Registration</h2>
+        <form action="register.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="username">Username*</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password*</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Full Name*</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="ic_passport">IC/Passport*</label>
+                <input type="text" id="ic_passport" name="ic_passport" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="student_id">Student ID*</label>
+                <input type="text" id="student_id" name="student_id" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="faculty_code">Faculty Code*</label>
+                <input type="text" id="faculty_code" name="faculty_code" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="programme_code">Programme Code*</label>
+                <input type="text" id="programme_code" name="programme_code" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="campus">Campus*</label>
+                <select id="campus" name="campus" required>
+                    <option value="">Select Campus</option>
+                    <option value="Main">Main Campus</option>
+                    <option value="Branch">Branch Campus</option>
+                    <option value="Online">Online</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="semester">Semester*</label>
+                <input type="text" id="semester" name="semester" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Gender*</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="level">Level*</label>
+                <select id="level" name="level" required>
+                    <option value="">Select Level</option>
+                    <option value="Foundation">Foundation</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Bachelor">Bachelor</option>
+                    <option value="Master">Master</option>
+                    <option value="PhD">PhD</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="mode">Mode*</label>
+                <select id="mode" name="mode" required>
+                    <option value="">Select Mode</option>
+                    <option value="Full-time">Full-time</option>
+                    <option value="Part-time">Part-time</option>
+                    <option value="Distance">Distance</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="nationality">Nationality*</label>
+                <input type="text" id="nationality" name="nationality" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="origin_country">Country of Origin*</label>
+                <input type="text" id="origin_country" name="origin_country" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Address*</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="postcode">Postcode*</label>
+                <input type="text" id="postcode" name="postcode" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+                <label for="mobile">Mobile*</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="scholarship">Scholarship</label>
+                <textarea id="scholarship" name="scholarship"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="photo">Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+            
+            <button type="submit" class="btn">Register</button>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </form>
+    </div>
+</body>
+</html>

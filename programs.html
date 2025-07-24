@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Programs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+        const path = window.location.pathname.split("/").pop();
+        document.querySelectorAll(".navbar a").forEach(link => {
+          if (link.getAttribute("href") === path) {
+            link.classList.add("active");
+          }
+        });
+      });
+  </script>
+   <br>
+   
+
+<div class="containerr">
+  <h1>🎓 Academic Programs at IITU</h1>
+  <p>IITU offers cutting-edge programs designed to prepare students for real-world careers in IT, cybersecurity, data science, and beyond.</p>
+
+  <section>
+    <h2>💻 Bachelor’s Programs</h2>
+    <ul>
+      <li><strong>Computer Science</strong> – Software engineering, algorithms, system architecture</li>
+      <li><strong>Information Systems</strong> – Business technologies, databases, enterprise systems</li>
+      <li><strong>Cybersecurity</strong> – Ethical hacking, information protection, cyber law</li>
+      <li><strong>Electronic Journalism</strong> – Digital media, journalism ethics, online platforms</li>
+      <li><strong>Telecommunications</strong> – Networks, protocols, IoT infrastructure</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🎓 Master’s Programs</h2>
+    <ul>
+      <li><strong>Artificial Intelligence</strong> – Machine learning, deep learning, NLP</li>
+      <li><strong>Big Data & Analytics</strong> – Data mining, visualization, predictive modeling</li>
+      <li><strong>Information Security</strong> – Advanced cybersecurity, cryptography, risk management</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🧪 PhD Programs</h2>
+    <ul>
+      <li><strong>Computer Science</strong> – Research in algorithms, distributed systems, AI</li>
+      <li><strong>Information Systems</strong> – Academic studies in digital transformation, innovation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🌍 International Collaboration</h2>
+    <p>Students have opportunities for academic mobility, exchange programs, and joint research projects with partner universities in the USA, Germany, France, Malaysia, and more.</p>
+  </section>
+
+  <section>
+    <h2>🚀 Start Your Journey</h2>
+    <p>Whether you want to build apps, secure data, analyze trends, or lead tech teams — IITU has a program for you. Apply today and become a tech leader of tomorrow.</p>
+  </section>
+</div>
+
+  <section class="programs">
+        <div class="container">
+            <h2>Our Programs</h2>
+            <div class="programs-grid">
+                <a href="https://www.mtu.edu/cs/what/" >
+                <div class="program-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Computer Science</h3>
+                    <p>Bachelor's and Master's programs in software engineering and algorithms</p>
+                </div></a>
+                <div class="program-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Science</h3>
+                    <p>Programs in big data, machine learning and AI</p>
+                </div>
+                <div class="program-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Specialized programs in information security</p>
+                </div>
+                <div class="program-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Telecommunications</h3>
+                    <p>Networking and communication technologies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
