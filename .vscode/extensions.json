@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "ecmel.vscode-html-css",
+        "formulahendry.auto-rename-tag",
+        "formulahendry.auto-close-tag",
+        "ritwickdey.liveserver",
+        "esbenp.prettier-vscode"
+    ]
+}
