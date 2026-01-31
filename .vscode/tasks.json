@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start PHP Server",
+            "type": "shell",
+            "command": "php -S localhost:8000",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Check PHP Syntax",
+            "type": "shell",
+            "command": "php -l ${file}",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Open in Browser",
+            "type": "shell",
+            "command": "start http://localhost:8000/auth.html",
+            "windows": {
+                "command": "start http://localhost:8000/auth.html"
+            },
+            "linux": {
+                "command": "xdg-open http://localhost:8000/auth.html"
+            },
+            "osx": {
+                "command": "open http://localhost:8000/auth.html"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
