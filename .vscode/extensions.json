@@ -2,13 +2,10 @@
     "recommendations": [
         "bmewburn.vscode-intelephense-client",
         "xdebug.php-debug",
-        "zobo.php-intellisense",
-        "felixfbecker.php-intellisense",
         "ecmel.vscode-html-css",
         "formulahendry.auto-rename-tag",
         "formulahendry.auto-close-tag",
         "ritwickdey.liveserver",
-        "ms-vscode.live-server",
         "esbenp.prettier-vscode"
     ]
 }
